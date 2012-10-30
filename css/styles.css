@@ -1,0 +1,426 @@
+/** FONT IMPORTS ============================================= */
+
+@font-face {
+	font-family: 'Negotiate';
+	src: url('../fonts/negotiate_free-webfont.eot');
+	src: url('../fonts/negotiate_free-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/negotiate_free-webfont.woff') format('woff'),
+	     url('../fonts/negotiate_free-webfont.ttf') format('truetype'),
+	     url('../fonts/negotiate_free-webfont.svg#webfont7AEiqOoJ') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas';
+	src: url('../fonts/bebas-webfont.eot');
+	src: url('../fonts/bebas-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/bebas-webfont.woff') format('woff'),
+	     url('../fonts/bebas-webfont.ttf') format('truetype'),
+	     url('../fonts/bebas-webfont.svg#webfontOJIfwzl6') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot");
+  src: url("../fonts/fontello.eot?#iefix") format('embedded-opentype'), url("../fonts/fontello.woff") format('woff'), url("../fonts/fontello.ttf") format('truetype'), url("../fonts/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Cabin Condensed'), local('CabinCondensed'), url(http://themes.googleusercontent.com/static/fonts/cabincondensed/v4/B0txb0blf2N29WdYPJjMStL_YSxa0Ggq46JEtXTJ0Ts.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'ChopinScript';
+	src: url('../fonts/chopinscript-webfont.eot');
+	src: url('../fonts/chopinscript-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/chopinscript-webfont.woff') format('woff'),
+	     url('../fonts/chopinscript-webfont.ttf') format('truetype'),
+	     url('../fonts/chopinscript-webfont.svg#chopinscriptregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/** FONT ICONS ============================================= */
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	color: #000;
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity: 0.7;
+/* fix buttons height */
+  line-height: 1em;
+}
+
+.icon-at:before { content: '\40'; } /* '@' */
+.icon-right:before { content: '\2192'; } /* '→' */
+.icon-github-text:before { content: '\f307'; } /* '' */
+.icon-github:before { content: '\f308'; } /* '' */
+
+/** RESETS / FIXES ============================================= */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-moz-transition: all .35s;
+	-webkit-transition: all .35s;
+}
+
+a {
+	text-decoration: none;
+	color: #454545;
+	-moz-transition: color .25s, background-color .15s;
+	-webkit-transition: color .25s, background-color .15s;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+img {
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+/** TYPOGRAPHY ============================================= */
+
+body {
+	font-family: "Negotiate", "Arial", sans-serif;
+	font-size: 1em;
+	color: #454545;
+}
+
+header h2 {
+	font-size: 2.25em;
+	color: #454545;
+}
+
+header h3 {
+	font-size: 1.25em;
+	color: #de847e;
+}
+
+header .icon-github {
+	font-size: .85em;
+	color: #000;
+}
+
+header a:hover,
+footer a:hover {
+	color: #6391de;
+}
+
+footer p {
+	font-size: .875em;
+	color: #808080;
+	margin-bottom: 4px;
+}
+
+footer h5 {
+	font-size: 1.25em;
+}
+
+.sub-tagline {
+	text-align: center;
+	text-transform: uppercase;
+	color: #818181;
+	font-family: "Cabin Condensed", "Arial";
+	margin: 30px 0 10px;
+	letter-spacing: 1px;
+}
+
+#main h1 {
+	font-family: "Bebas";
+	font-size: 6em;
+	line-height: .9em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#main h1 span {
+	font-size: .65em;
+	font-family: "ChopinScript";
+	color: #de847e;
+	top: -20px;
+	position: relative;
+}
+
+#main h3 {
+	font-size: 1.875em;
+	margin-bottom: 20px;
+}
+
+.project p {
+	clear: both;
+	color: #646464;
+	line-height: 1.5em;
+}
+
+.project-css3 .btn .primary {
+	font-size: 1.35em;
+	line-height: 41px;
+}
+
+/** LAYOUT ============================================= */
+
+header .inner,
+footer .inner,
+#main {
+	width: 780px;
+	margin: 0 auto;
+}
+
+#main {
+	padding-bottom: 40px;
+}
+
+header {
+	background: #f9f9f9;
+}
+
+header .inner {
+	padding: 14px 0;
+}
+
+header .email {
+	text-align: right;
+	font-size: 1.25em;
+	float: right;
+}
+
+header .github {
+	text-align: right;
+	font-size: 1.25em;
+	float: right;
+	margin-right: 20px;
+}
+
+footer {
+	background: #f9f9f9;
+}
+
+footer .inner {
+	padding: 20px 0 40px;
+}
+
+footer .first {
+	padding-right: 26px;
+	margin-right: 26px;
+	border-right: solid #ccc 1px;
+}
+
+footer .first p {
+	margin-bottom: 6px;
+}
+
+footer img {
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+
+.project {
+	margin-bottom: 80px;
+}
+
+.project-logo {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.project-arrow {
+	float: left;
+	margin: 40px 22px 0;
+	font-size: 2.75em;
+}
+
+.project-launch {
+	float: left;
+	margin-top: 18px;
+	width: 38%;
+}
+
+.btn {
+	font-family: "Bebas", "Arial";
+	color: #fff;
+	background: #6391de;
+	display: block;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 14px 0;
+	text-align: center;
+	width: 100%;
+	-webkit-box-shadow: 0 7px 0 #4a6ca6;
+	-moz-box-shadow: 0 7px 0 #4a6ca6;
+	box-shadow: 0 7px 0 #4a6ca6;
+	position: relative;
+}
+
+.btn span {
+	display: block;
+}
+
+.btn .secondary {
+	font-size: 1.125em;
+}
+
+.btn .primary {
+	font-size: 1.875em;
+}
+
+.btn:hover {
+	background: #72cb76;
+	box-shadow: 0 7px 0 #549557;
+}
+
+.btn:active {
+	box-shadow: none;
+	top: 7px;
+}
+
+/** RESPONSIVE ============================================= */
+
+@media(max-width: 780px){
+	
+	header .inner,
+	footer .inner,
+	#main {
+		width: 100%;
+	}
+	
+	header .left,
+	footer .left {
+		padding-left: 20px;
+	}
+	
+	header .right {
+		padding-right: 20px;
+	}
+	
+	footer .left.first {
+		border: 0;
+		margin-bottom: 20px;
+	}
+	
+	#main h1 {
+		font-size: 4em;
+	}
+	
+	#main .inner {
+		padding: 0 20px;
+	}
+	
+	.project-arrow {
+		display: none;
+	}
+	
+	.project-logo {
+		float: none;
+		text-align: center;
+	}
+	
+	.project-launch {
+		float: none;
+		width: 378px;
+		margin: 0 auto 20px;
+	}
+	
+	#main h3 {
+		text-align: center;
+	}
+	
+	#main p {
+		text-align: center;
+	}
+	
+}
+
+@media(max-width: 480px){
+	
+	header .left {
+		float: none;
+		padding: 0;
+	}
+	
+	header .right {
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+	
+	header h2,
+	header h3 {
+		text-align: center;
+	}
+	
+	header .email,
+	header .github {
+		float: none;
+		display: inline;
+		margin: 0;
+	}
+	
+	header .email {
+		margin-right: 20px;
+	}
+	
+	#main h1 {
+		font-size: 3em;
+	}
+	
+	#main h1 span {
+		top: -10px;
+	}
+	
+}
+
+@media(max-width: 420px){
+	
+	.project-launch {
+		width: 100%;
+	}
+	
+	#main h1 {
+		font-size: 2em;
+	}
+
+}
+
