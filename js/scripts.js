@@ -32,7 +32,6 @@ $(function(){
 						// hide the success message after 4 seconds
 						setTimeout(function(){
 							$('#contact-wrap').slideToggle(500);
-							$form.find('.submit').val('Send').removeAttr('disabled');
 						}, 4000);
 					});
 				});
@@ -44,6 +43,7 @@ $(function(){
 					$('#contact-error').fadeIn(300);
 				});
 			}
+			$form.find('.submit').val('Send').removeAttr('disabled');
 		});
 		return false;
 	}
