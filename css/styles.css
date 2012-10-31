@@ -71,6 +71,8 @@
 .icon-right:before { content: '\2192'; } /* '→' */
 .icon-github-text:before { content: '\f307'; } /* '' */
 .icon-github:before { content: '\f308'; } /* '' */
+.icon-block:before { content: '\1f6ab'; } /* '' */
+.icon-cancel:before { content: '\2715'; } /* '✕' */
 
 /** RESETS / FIXES ============================================= */
 
@@ -144,7 +146,8 @@ header .icon-github {
 }
 
 header a:hover,
-footer a:hover {
+footer a:hover,
+#contact a:hover {
 	color: #6391de;
 }
 
@@ -199,6 +202,12 @@ footer h5 {
 	line-height: 41px;
 }
 
+#contact h4 {
+	font-size: 3em;
+	margin-bottom: 10px;
+	width: 75%;
+}
+
 /** LAYOUT ============================================= */
 
 header .inner,
@@ -218,6 +227,7 @@ header {
 
 header .inner {
 	padding: 14px 0;
+	position: relative;
 }
 
 header .email {
@@ -231,14 +241,6 @@ header .github {
 	font-size: 1.25em;
 	float: right;
 	margin-right: 20px;
-}
-
-footer {
-	background: #f9f9f9;
-}
-
-footer .inner {
-	padding: 20px 0 40px;
 }
 
 footer .first {
@@ -315,6 +317,114 @@ footer img {
 	box-shadow: none;
 	top: 7px;
 }
+
+#contact-wrap,
+#contact-success,
+#contact-error {
+	display: none;
+}
+
+#contact-wrap,
+#contact-form,
+#contact-success,
+#contact-error {
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+/*#contact-success,
+#contact-wrap {
+	display: block;
+}
+
+#contact-form {
+	display: none;
+}
+*/
+#contact {
+	background: #f9f9f9;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 30px 0;
+	position: relative;
+/*	height: 380px;*/
+}
+
+#contact label {
+	display: block;
+	margin-bottom: 3px;
+	color: #888;
+}
+
+#contact label.error {
+	display: none!important;
+}
+
+#contact input[type="text"],
+#contact textarea {
+	border: solid #ccc 1px;
+	padding: 6px;
+	font-family: "Negotiate", "Arial", sans-serif;
+	font-size: 1em;
+	width: 97%;
+}
+
+#contact textarea {
+	height: 200px;
+}
+
+#contact input[type="text"]:focus,
+#contact textarea:focus {
+	border: solid #6391de 1px;
+}
+
+#contact input.error,
+#contact textarea.error {
+	border: solid red 1px!important;
+}
+
+#contact .form-item {
+	margin-bottom: 10px;
+}
+
+#contact .close {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 1.15em;
+}
+
+#contact .submit {
+	border: 0;
+	color: #fff;
+	background: #6391de;
+	border-radius: 10px;
+	padding: 5px 15px;
+	font-size: 1.25em;
+	cursor: pointer;
+	margin-top: 15px;
+	-webkit-appearance: none;
+}
+
+#contact .submit:hover {
+	background: #72cb76;
+}
+
+#contact .submit[disabled],
+#contact .submit[disabled]:hover {
+	cursor: auto;
+	background: #94B7F2;
+}
+
+footer {
+	background: #f9f9f9;
+}
+
+footer .inner {
+	padding: 20px 0 40px;
+}
+
 
 /** RESPONSIVE ============================================= */
 
@@ -408,6 +518,21 @@ footer img {
 	
 	#main h1 span {
 		top: -10px;
+	}
+	
+	#contact h4 {
+		width: 100%;
+		font-size: 1.6em;
+		text-align: center;
+		padding-top: 35px;
+	}
+	
+	#contact {
+		padding-top: 5px;
+	}
+	
+	#contact .close {
+		top: 8px;
 	}
 	
 }

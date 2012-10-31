@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 
@@ -38,11 +39,50 @@
 					<a href="https://github.com/wandoledzep" target="_blank"><span class="icon-github"></span> Github</a>
 				</div>
 			</div>
+			
 		</div>
 	</header>
 	
 	<section id="main">
 		<div class="inner">
+			
+			<div id="contact-wrap">
+				<div id="contact">
+					
+					<div id="contact-form">
+						<h4>What's on your mind?</h4>
+						<div class="close"><a href=""><span class="icon-cancel"></span>Close</a></div>
+						<form method="POST" action="">
+							<div class="form-item">
+								<label for="name">Name</label>
+								<input type="text" name="name" value="" id="name" class="required" />
+							</div>
+							<div class="form-item">
+								<label for="email">Email</label>
+								<input type="text" name="email" value="" id="email" class="required email" />
+							</div>
+							<div class="form-item">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" class="required"></textarea>
+							</div>
+							<div class="form-item">
+								<input type="submit" value="Send" class="submit" />
+							</div>
+						</form>
+					</div>
+					
+					<div id="contact-success">
+						<h4>Sweet!</h4>
+						<p>Thanks for the note. We will be in touch shortly. Closing now...</p>
+					</div>
+					
+					<div id="contact-error">
+						<h4>Oh no!</h4>
+						<p>Something went wrong. Please refresh the page and try again.</p>
+					</div>
+					
+				</div>
+			</div>
 		
 			<div class="sub-tagline">Building cool stuff with</div>
 			<h1>Rails <span>&amp;</span> Javascript</h1>
