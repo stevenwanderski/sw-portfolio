@@ -399,6 +399,8 @@ footer img {
 	border: 0;
 	color: #fff;
 	background: #6391de;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	padding: 5px 15px;
 	font-size: 1.25em;
