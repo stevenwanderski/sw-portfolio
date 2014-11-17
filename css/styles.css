@@ -243,6 +243,12 @@ header .github {
 	margin-right: 20px;
 }
 
+header .twitter {
+	float: right;
+	clear: right;
+	margin-top: 10px;
+}
+
 footer .first {
 	padding-right: 26px;
 	margin-right: 26px;
@@ -512,6 +518,10 @@ footer .inner {
 	
 	header .email {
 		margin-right: 20px;
+	}
+
+	header .twitter {
+		float: none;
 	}
 	
 	#main h1 {
